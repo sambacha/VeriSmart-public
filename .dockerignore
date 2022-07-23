@@ -1,0 +1,9 @@
+.git/
+.github/
+Makefile
+Dockerfile
+_build
+validation-files/*
+output/*
+docker-compose.yml
+docker-bake.hcl
