@@ -21,10 +21,10 @@ RUN apt-get update && apt-get install -y \
 
 ENV LANG=en_US.UTF-8
 # Install some basic pre-requisites
+
 RUN set -eux; \
-	  apt-get -qq update; \
+    apt-get -qq update; \
     DEBIAN_FRONTEND=noninteractive apt-get install -qqy --assume-yes --no-install-recommends \
-    sudo \
     wget \
     git build-essential \
     g++ \ 
@@ -35,7 +35,6 @@ RUN set -eux; \
     libgmp3-dev \
     unzip \
     opam \
-    python3 python3-pip \
     time \
     z3 \
     libz3-dev \
